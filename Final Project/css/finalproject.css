@@ -1,0 +1,101 @@
+body {
+    font-family: 'Nixie One', cursive;
+	background-image:url('../media/Background.jpg');
+    background-repeat:no-repeat;
+    background-position:top center;
+    color:black;
+    font-size:14pt;
+    min-width:500px;
+    background-size: cover;
+}
+h1 {
+  font: 400 3.5em/125% Helvetica, Sans-serif;
+  color: darkgreen;
+  text-shadow: 1px 1px 0px #ededed, 4px 4px 0px rgba(0,0,0,0.15);
+  text-align:center;
+  z-index:2;
+}
+nav {
+    margin:50px auto; 
+    text-align: center;
+}
+
+nav ul {
+    background: linear-gradient(0deg, lavender, rgb(101, 243, 101), lightgreen, lavender); 
+    box-shadow: 6px 6px 6px rgba(0,0,0,0.15);
+    padding: 0 20px;
+    border-radius: 10px;  
+    text-shadow: 1px;
+    list-style: none;
+    position: relative;
+    color:black;
+    font-weight:900;
+    width:100%;
+    display:inline-table;
+}
+nav ul li {
+    display:inline-table;
+}
+nav ul li a {
+    display: block; 
+    padding: 25px 40px;
+    color:black; 
+    text-decoration: none;
+}
+nav ul li:hover {
+    background: linear-gradient(180deg, lavender, rgb(64, 187, 64), lightgreen, lavender); 
+}
+nav ul li:hover a {
+    color:black;
+}
+nav ul li:hover > ul {
+    display:flex;
+    flex-direction:column;
+    width:30%;
+}
+    
+nav ul ul {
+    display: none;
+    background: linear-gradient(180deg, lavender, rgb(64, 187, 64), lightgreen, lavender); 
+    border-radius: 0px; 
+    padding: 0;
+    position: absolute; 
+    z-index:10;
+}
+nav ul ul li {
+    display:block; 
+    border-top: 1px solid black;
+    border-bottom: 1px solid black; 
+    position: relative;
+}
+nav ul ul li a {
+    padding: 15px 40px;
+    color: black;
+}	
+nav ul ul li a:hover {
+    background: lavender;
+    color:green;
+}
+footer{
+    margin-top:200px;
+}
+.icon-bar {
+    width: 100%; /* Full-width */
+    background-color: green; 
+    text-shadow: 3px;
+    overflow: auto; /* Overflow due to float */
+}
+
+.icon-bar a {
+    float: left; /* Float links side by side */
+    text-align: center; /* Center-align text */
+    width: 20%; /* Equal width (5 icons with 20% width each = 100%) */
+    padding: 12px 0; /* Some top and bottom padding */
+    transition: all 0.3s ease; /* Add transition for hover effects */
+    color: white; /* White text color */
+    font-size: 36px; /* Increased font size */
+}
+
+.icon-bar a:hover {
+    background-color: #000; /* Add a hover color */
+}
